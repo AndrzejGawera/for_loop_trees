@@ -17,13 +17,15 @@ function drawTree(n = 5) {
 }
 
 function drawMatrix(n = 5) {
+  let lines = "";
   for (let i = 1 ; i <= n; i++) {
     let line = "";
     for (let j = 0; j <= n ; j++) {
       line += j + " ";
     }
-    console.log(line);
+    lines += `${line}\n`;
   }
+  console.log(lines);
 }
 
 function drawChristmasTree(n = 5) {
